@@ -71,7 +71,7 @@ const handleSubmit = async (e) => {
     const messageDiv = document.getElementById(uniqueId)
     loader(messageDiv)
 
-    const response = await fetch('https://geniebot.onrender.com', {
+    const response = await fetch('https://chat-codex-o3es.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
