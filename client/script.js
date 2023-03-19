@@ -71,7 +71,7 @@ const handleSubmit = async (e) => {
     const messageDiv = document.getElementById(uniqueId)
     loader(messageDiv)
 
-    const response = await fetch('https://wandering-hose-ox.cyclic.app', {
+    const response = await fetch(process.env.CYCLIC_URL, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
