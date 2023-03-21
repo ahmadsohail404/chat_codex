@@ -71,7 +71,7 @@ const handleSubmit = async (e) => {
     const messageDiv = document.getElementById(uniqueId)
     loader(messageDiv)
 
-    const response = await fetch(process.env.CYCLIC_URL, {
+    const response = await fetch(process.env.RENDER_API_KEY, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
